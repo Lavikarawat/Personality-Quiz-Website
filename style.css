@@ -1,0 +1,176 @@
+/* Style.Css */
+body{
+    background: url(https://tinyurl.com/2zdy5xu3);
+    background-size: cover;
+    /* color: white; */
+}
+#a{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+#a table{
+    margin-top: 100px;
+    /* border: 1px solid rgb(185, 184, 184); */
+}
+#th1{
+    background-color: rgb(35, 2, 75);
+}
+#b{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    width: 800px;
+    margin-left: 230px;
+    
+}
+#b table{
+    margin-top: 70px;
+    /* border: 1px solid rgb(185, 184, 184); */
+}
+#th2{
+    background-color: rgb(59, 2, 97);
+}
+#c{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    width: 800px;
+    margin-left: 230px;
+    
+}
+#c table{
+    margin-top: 70px;
+    /* border: 1px solid rgb(185, 184, 184); */
+}
+#th3{
+    background-color: rgb(65, 2, 94);
+}
+#d{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    width: 800px;
+    margin-left: 230px;
+    
+}
+#d table{
+    margin-top: 70px;
+    /* border: 1px solid rgb(185, 184, 184); */
+}
+#th4{
+    background-color: rgb(99, 3, 143);
+}
+#e{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    width: 800px;
+    margin-left: 230px;
+    
+}
+#e table{
+    margin-top: 70px;
+    /* border: 1px solid rgb(185, 184, 184); */
+}
+#th5{
+    background-color: rgb(136, 6, 196);
+}
+#f{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    width: 800px;
+    margin-left: 230px;
+    
+}
+#f table{
+    margin-top: 70px;
+    /* border: 1px solid rgb(185, 184, 184); */
+}
+#th6{
+    background-color: rgb(168, 6, 243);
+}
+#f{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    width: 800px;
+    margin-left: 230px;
+    
+}
+#f table{
+    margin-top: 70px;
+    /* border: 1px solid rgb(185, 184, 184); */
+}
+#th7{
+    background-color: rgb(178, 22, 250);
+}
+#g{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    width: 800px;
+    margin-left: 230px;
+    
+}
+#g table{
+    margin-top: 70px;
+    /* border: 1px solid rgb(185, 184, 184); */
+}
+#th8{
+    background-color: rgb(185, 56, 245);
+}
+#h{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    width: 800px;
+    margin-left: 230px;
+    
+}
+#h table{
+    margin-top: 70px;
+    /* border: 1px solid rgb(185, 184, 184); */
+}
+#th9{
+    background-color: rgb(160, 67, 203);
+}
+#i{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    width: 800px;
+    margin-left: 230px;
+    
+}
+#i table{
+    margin-top: 70px;
+    /* border: 1px solid rgb(185, 184, 184); */
+}
+#th10{
+    background-color: rgb(174, 84, 216);
+}
+#j{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    width: 800px;
+    margin-left: 230px;
+    
+}
+#j table{
+    margin-top: 70px;
+    /* border: 1px solid rgb(185, 184, 184); */
+}
+button {
+background-color: #28a745;
+color: white;
+border: none;
+padding: 10px 15px;
+border-radius: 5px;
+cursor: pointer;
+font-size: 1em;
+margin-top: 15px;
+margin-left: 600px;
+}
+
+button:hover {
+background-color: #1a692b;
+}
+
+#result {
+margin-top: 20px;
+background: #6e25d3d2;
+border-left: 6px solid #2196F3;
+padding: 15px;
+}

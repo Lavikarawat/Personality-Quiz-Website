@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question One</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* body{
+            background-image: url(https://tinyurl.com/2wpw6kz4);
+            /* background-repeat: no-repeat;
+            background-size: cover; 
+        } */
+
+        #quizForm {
+            display: none; 
+            color: white;
+        }
+        @media (max-width: 768px) {
+            #quizForm {
+                padding: 10px; 
+            }
+
+            table {
+                width: 100%; 
+            }
+
+            button {
+                width: 100%; 
+                font-size: 24px; 
+            }
+        }
+
+        @media (max-width: 480px) {
+            button {
+                height: 60px; 
+                font-size: 20px; 
+            }
+
+            th {
+                font-size: 18px;
+            }
+
+            td {
+                font-size: 16px; 
+            }
+        }
+    </style>
+</head>
+<div id="startForm" style="color: white; text-align: center; padding: 20px;">
+    <h2>Welcome to the Personality Quiz!</h2>
+    <p>Please fill out the information to begin:</p>
+    
+    <input type="text" id="userName" placeholder="Enter your name" required>
+    <br><br>
+
+    <input type="number" id="userAge" placeholder="Enter your age" required>
+    <br><br>
+
+    <select id="userGender" required>
+        <option value="">Select your gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+    </select>
+    <br><br>
+
+    <button onclick="startQuiz()">Start Quiz</button>
+</div>
+<div id="quizForm" style="color: white;">
+    <div id="a">
+        <table align="center" border="3" cellpadding="20">
+            <tr>
+                <th id="th1"><b>"How do you typically prefer to spend your free time?"</b> </th>
+            </tr>
+            <tr><td><input type="radio" name="question1" value="A"> Alone with a good book or movie</td></tr>
+            <tr><td><input type="radio" name="question1" value="B"> At a party or social gathering with friends</td></tr>
+            <tr><td><input type="radio" name="question1" value="C"> Sometimes I enjoy being social, and other times I like my own space</td></tr>
+            <tr><td><input type="radio" name="question1" value="D"> Trying out new activities or sports, always on the go</td></tr>
+            <tr><td><input type="radio" name="question1" value="E"> Engaging in creative projects like painting, writing or new ideas</td></tr>
+        </table>
+    <br><br><br><hr>
+    <div id="b">
+        <table align="center" border="3" cellpadding="20">
+            <tr>
+                <th id="th2"><b>"When faced with a challenge, you typically:"</b> </th>
+            </tr>
+            <tr><td><input type="radio" name="question2" value="A"> Take time to think it through before acting.</td></tr>
+            <tr><td><input type="radio" name="question2" value="B"> Jump right in and tackle it head-on.</td></tr>
+            <tr><td><input type="radio" name="question2" value="C"> Assess the situation and decide based on how I feel.</td></tr>
+            <tr><td><input type="radio" name="question2" value="D"> Enlist friends to brainstorm solutions together.</td></tr>
+            <tr><td><input type="radio" name="question2" value="E"> Look for creative ways to approach it.</td></tr>
+        </table>
+    </div>
+    <br><br><br><hr>
+    <div id="c">
+        <table align="center" border="3" cellpadding="20">
+            <tr>
+                <th id="th3"><b>"In a group project, you prefer to:"</b> </th>
+            </tr>
+            <tr><td><input type="radio" name="question3" value="A">  Work independently and share ideas later.</td></tr>
+            <tr><td><input type="radio" name="question3" value="B"> Lead the discussion and motivate everyone.</td></tr>
+            <tr><td><input type="radio" name="question3" value="C"> Collaborate with others while also having my own space.</td></tr>
+            <tr><td><input type="radio" name="question3" value="D"> Organize fun team-building activities to boost morale</td></tr>
+            <tr><td><input type="radio" name="question3" value="E"> Propose innovative ideas and think outside the box.</td></tr>
+        </table> 
+    </div>
+    <br><br><br><hr>
+    <div id="d">
+        <table align="center" border="3" cellpadding="20">
+            <tr>
+                <th id="th4"><b>"How do you recharge after a long day?"</b> </th>
+            </tr>
+            <tr><td><input type="radio" name="question4" value="A"> Enjoying some quiet time alone.</td></tr>
+            <tr><td><input type="radio" name="question4" value="B"> Hanging out with friends or going out.</td></tr>
+            <tr><td><input type="radio" name="question4" value="C"> A little of both—some alone time and some socializing.</td></tr>
+            <tr><td><input type="radio" name="question4" value="D"> Engaging in a physical activity like running or dancing.</td></tr>
+            <tr><td><input type="radio" name="question4" value="E"> Working on a creative project like drawing or writing.</td></tr>
+        </table>
+    </div>
+    <br><br><br><hr>
+    <div id="e">
+        <table align="center" border="3" cellpadding="20">
+            <tr>
+                <th id="th5"><b>"When you get a new idea, you usually:"</b> </th>
+            </tr>
+            <tr><td><input type="radio" name="question5" value="A"> Think it through carefully before sharing.</td></tr>
+            <tr><td><input type="radio" name="question5" value="B"> Excitedly share it with everyone around you.</td></tr>
+            <tr><td><input type="radio" name="question5" value="C"> Discuss it with a few close friends to get their opinions.</td></tr>
+            <tr><td><input type="radio" name="question5" value="D"> Immediately start planning how to implement it.</td></tr>
+            <tr><td><input type="radio" name="question5" value="E"> Sketch it out or brainstorm more creative aspects.</td></tr>
+        </table>
+    </div>
+    <br><br><br><hr>
+    <div id="f">
+        <table align="center" border="3" cellpadding="20">
+            <tr>
+                <th id="th6"><b>"In conversations, you tend to:"</b> </th>
+            </tr>
+            <tr><td><input type="radio" name="question6" value="A"> Listen more than you talk.</td></tr>
+            <tr><td><input type="radio" name="question6" value="B"> Enjoy sharing stories and being the center of attention.</td></tr>
+            <tr><td><input type="radio" name="question6" value="C"> Engage when you feel inspired, balancing listening and speaking.</td></tr>
+            <tr><td><input type="radio" name="question6" value="D"> Bring high energy and enthusiasm to the discussion.</td></tr>
+            <tr><td><input type="radio" name="question6" value="E"> Introduce unique perspectives or creative ideas.</td></tr>
+        </table>
+    </div>
+    <br><br><br><hr>
+
+    <div id="g">
+        <table align="center" border="3" cellpadding="20">
+            <tr>
+                <th id="th7"><b>"If your life were a book, what genre would it be?"</b></th>
+            </tr>
+            <tr><td><input type="radio" name="question7" value="A"> Drama or Memoir—reflecting a deep journey of self-discovery.</td></tr>
+            <tr><td><input type="radio" name="question7" value="B"> Adventure or Fantasy—full of action, exploration, and excitement.</td></tr>
+            <tr><td><input type="radio" name="question7" value="C"> Mystery or Thriller—filled with surprises, twists, and introspection.</td></tr>
+            <tr><td><input type="radio" name="question7" value="D"> Romance—focused on relationships, emotions, and personal growth.</td></tr>
+            <tr><td><input type="radio" name="question7" value="E"> Science Fiction—exploring new worlds, ideas, and technologies.</td></tr>
+        </table>
+    </div>
+    <br><br><br><hr>
+
+    <div id="h">
+        <table align="center" border="3" cellpadding="20">
+            <tr>
+                <th id="th8"><b>"Which of the following book characters do you most identify with?"</b></th>
+            </tr>
+            <tr><td><input type="radio" name="question8" value="A"> Elizabeth Bennet from *Pride and Prejudice*—independent and thoughtful.</td></tr>
+            <tr><td><input type="radio" name="question8" value="B"> Harry Potter from *Harry Potter*—brave, loyal, and always standing up for what’s right.</td></tr>
+            <tr><td><input type="radio" name="question8" value="C"> Sherlock Holmes from *Sherlock Holmes*—logical, analytical, and always solving problems.</td></tr>
+            <tr><td><input type="radio" name="question8" value="D"> Atticus Finch from *To Kill a Mockingbird*—wise, empathetic, and a moral compass.</td></tr>
+            <tr><td><input type="radio" name="question8" value="E"> Jay Gatsby from *The Great Gatsby*—ambitious, mysterious, and determined.</td></tr>
+        </table>
+    </div>
+    <br><br><br><hr>
+
+    <div id="i">
+        <table align="center" border="3" cellpadding="20">
+            <tr>
+                <th id="th9"><b>"Which of these books would you most likely read in your free time?"</b></th>
+            </tr>
+            <tr><td><input type="radio" name="question9" value="A"> The Art of Solitude</td></tr>
+            <tr><td><input type="radio" name="question9" value="B"> The Power of Habit</td></tr>
+            <tr><td><input type="radio" name="question9" value="C"> Big Magic</td></tr>
+            <tr><td><input type="radio" name="question9" value="D"> Atomic Habits</td></tr>
+            <tr><td><input type="radio" name="question9" value="E"> The 4-Hour Workweek</td></tr>
+        </table>
+    </div>
+    <br><br><br><hr>
+
+    <div id="j">
+        <table align="center" border="3" cellpadding="20">
+            <tr>
+                <th id="th10"><b>"If you were to recommend a book to someone based on your personality, which would it be?"</b></th>
+            </tr>
+            <tr><td><input type="radio" name="question10" value="A"> Quiet: The Power of Introverts in a World That Can’t Stop Talking</td></tr>
+            <tr><td><input type="radio" name="question10" value="B"> Daring Greatly</td></tr>
+            <tr><td><input type="radio" name="question10" value="C"> Steal Like an Artist</td></tr>
+            <tr><td><input type="radio" name="question10" value="D"> The Subtle Art of Not Giving a care</td></tr>
+            <tr><td><input type="radio" name="question10" value="E"> Start with Why</td></tr>
+        </table>
+    </div>
+    <br><br><br><hr>
+
+</div>
+
+<button type="button" onclick="calculateResult()">SUBMIT</button>
+<div id="result" style="display: none;">
+    <h2>Your Personality Type:</h2>
+    <p id="personalityResult"></p>
+</div>
+
+
+<!-- the js file to be linked -->
+<script src="script.js"></script>
+
+<script>
+    function startQuiz() {
+
+        var userName = document.getElementById('userName').value;
+        var userAge = document.getElementById('userAge').value;
+        var userGender = document.getElementById('userGender').value;
+
+        if (userName.trim() !== "" && userAge !== "" && userGender !== "") {
+            document.getElementById('startForm').style.display = 'none';
+            document.getElementById('quizForm').style.display = 'block';
+            
+            alert("Welcome, " + userName + " (" + userAge + ", " + userGender + ")! Let's get started with the quiz.");
+        } else {
+            alert("Please fill out all the fields to start.");
+        }
+    }
+
+    function calculateResult() {
+        var answers = {
+            question1: document.querySelector('input[name="question1"]:checked'),
+        };
+
+        if (answers.question1) {
+            var result = "Your personality type is: ";
+            result += answers.question1.value;  
+            document.getElementById('personalityResult').textContent = result;
+            document.getElementById('result').style.display = 'block';
+        } else {
+            alert("Please answer all the questions.");
+        }
+    }
+</script>
+
+</html>

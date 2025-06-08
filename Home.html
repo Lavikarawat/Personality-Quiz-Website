@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>content</title>
+    <style>
+        body {
+            background: url(https://tinyurl.com/3cp5p87p)  no-repeat;
+            background-size: cover;
+            background-blend-mode: multiply;
+            max-width: 1261px;
+        }
+        header {
+            background-image: url(https://tinyurl.com/p43mfwa) #535351;
+            background-blend-mode: multiply;
+            width: 1261px;
+            height: 150px;
+            border-radius: 30px;
+            position: absolute;
+            top: 2px;
+            left: 5px;
+            min-width: 1261px;
+        }
+        #h1 {
+            font-size: 80px;
+            text-align: center;
+            margin: 30px;
+            color: rgba(40, 224, 144, 0.97);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            box-shadow: 7px 7px 25px 15px black;
+            border-radius: 30px;
+        }
+        #box1, #box2 {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: rgb(215, 245, 233);
+            width: 400px;
+            height: 300px;
+            position: absolute;
+            border-radius: 50px;
+            box-shadow: 5px 5px 15px 5px rgb(8, 81, 52);
+            border: 3px solid rgba(1, 49, 31, 0.564);
+        }
+        #box1:hover, #box2:hover {
+            cursor: pointer;
+            background: #9ef0cf;
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+            /* border-color: aquamarine; */
+            /* opacity: 0.7; */
+        }
+        #img, #img1 {
+            margin-left: 16px;
+            margin-top: 10px;
+            width: 370px;
+            height: 220px;
+            border-radius: 50px;
+            /* box-shadow: 5px 5px 1px 1px rgb(117, 115, 100); */
+        }
+        #img2 {
+            width: 20px;
+            height: 20px;
+            box-shadow: 1px 1px 3px 3px rgb(1, 59, 33);
+        }
+        #box1 h1, #box2 h1 {
+            margin-top: 30px;
+            color: white;
+        }
+        #desc1{
+            padding: 15px;
+            margin-top: -5px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 33px;
+            margin-left: 26px;
+        }
+        #desc2 {
+            padding: 15px;
+            margin-top: -5px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 29px;
+            margin-left: 6px;
+        }
+        #box1 {
+            top: 300px;
+            left: 160px;
+        }
+        #box2 {
+            top: 300px;
+            left: 730px;
+        }
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            header {
+                width: 100%;
+                height: auto;
+            }
+            #h1 {
+                font-size: 50px;
+            }
+            #box1, #box2 {
+                width: 90%;
+                height: auto;
+                position: relative;
+                margin: 20px auto;
+            }
+            #img, #img1 {
+                width: 100%;
+                height: auto;
+            }
+            #img2 {
+                width: 15px; /* Adjust size for smaller screens */
+                height: 15px; /* Adjust size for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 id="h1"><b>... Personality Quiz ...</b></h1>
+    </header>
+    <br><br><br><br><br><br><br><br><br>
+    <hr>
+    <button class="w3-btn w3-pale-yellow" onclick="document.getElementById('bulb').style.display='block'">
+        <abbr title=" 'Every man makes his own personality, he is to that extent his own creator.' "><img src="bulb.png" id="img2"></abbr>
+    </button><br><br><br>
+    <div id="box1">
+        <a href="test.html"><img src="https://tinyurl.com/bdfd936t" id="img"></a>
+        <div id="desc1"><b>...Personality Test...</b></div>
+    </div>
+    <div id="box2">
+        <a href="PersonalityTypes.html"><img src="https://tinyurl.com/srrhbvey" id="img1"></a>
+        <div id="desc2"><b>...Types of Personalities...</b></div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <hr>
+</body>
+</html>
